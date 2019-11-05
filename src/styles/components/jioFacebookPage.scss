@@ -1,0 +1,325 @@
+.closeBtn {
+    background: white;
+    padding: 4px;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+}
+
+.headerActionsContainer {
+    @media (max-width:500px) {
+        display: none;
+    }
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 2;
+
+    @media (max-width:500px) {
+        display: block;
+        text-align: left;
+
+        .profilePicContainer {
+            border-bottom: 1px solid #ccc;
+
+        }
+    }
+}
+
+.jioFacebookPageContainer {
+
+    margin: 0 auto;
+    text-align: center;
+    background: #E9EBEE;
+
+    .pageHeader {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: relative;
+        background: #4267B2;
+        height: 30px;
+        color: #fff;
+
+        .menuToggle {
+
+            @media (max-width:500px) {
+                display: flex;
+            }
+
+            width: 40px;
+            height: 40px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+
+            span {
+                width: 25px;
+                height: 5px;
+                background: #fff;
+                display: block;
+                position: relative;
+                border-radius: 1px;
+
+                &::before,
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 25px;
+                    height: 5px;
+                    background: #fff;
+                    position: absolute;
+                    border-radius: 1px;
+                }
+
+                &::before {
+                    top: -8px;
+                }
+
+                &::after {
+                    top: 8px;
+                }
+            }
+
+        }
+
+        .sideMenuContainer {
+            width: 200px;
+            height: 100vh;
+            background: #fff;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            color: #000000;
+            font-size: 16px;
+            z-index: 2;
+
+            .sideMenuWrapper {
+                padding: 10px 5px;
+
+                .headerActions {
+                    .optionContainer {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+
+                        .optionText {
+                            margin-left: 20px;
+                        }
+
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        h3 {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+
+    }
+
+    .jioFacebookPageContentWrapper {
+        padding: 40px 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .leftContentContainer {
+            flex-grow: 2;
+
+            .createPostContainer {
+                border-radius: 3px;
+                text-align: left;
+                background: #fff;
+
+                span {
+                    padding: 5px 10px;
+                    font: 14px;
+                    display: block;
+                    background: #F5F6F7;
+                }
+
+                .creatPostInput {
+                    padding: 5px 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        height: 40px;
+                        padding: 10px;
+                        border: none;
+                    }
+
+                    button {
+                        background: #4267B2;
+                        border: none;
+                        border-radius: 3px;
+                        padding: 5px 10px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .rightContentContainer {
+            @media (max-width:500px) {
+                display: none;
+            }
+
+            flex-grow: 1;
+            margin-left: 20px;
+            background: #fff;
+        }
+    }
+}
+
+.allSectionsContainer {
+    display: flex;
+    height: 100vh;
+    // border: 1px solid #D7D7D7;
+    // padding: 20px;
+    justify-content: space-between;
+    // background: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+
+}
+
+.facebookSectionContainer {
+    height: 100vh;
+    width: 100%;
+    // background: #FFFFFF;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    input {
+        width: auto;
+        border: none;
+        border-bottom: 1px solid #D7D7D7;
+    }
+}
+
+.userDetailsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background: none;
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+    }
+}
+
+.postContainer {
+    padding: 10px 10px 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: black;
+    position: relative;
+    background: #fff;
+
+    .postContainerWrapper {
+        width: 90%;
+        margin: 0 auto;
+
+        .userTitleContainer {
+            .profilePicContainer {
+                button {
+                    background: white;
+                    padding: 4px;
+                    height: 20px;
+                    width: 20px;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .postTopContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5px;
+        }
+
+        .commentInput {
+            input {
+                background: #F2F3F5;
+                border-radius: 7px;
+                padding: 5px;
+                width: 90%;
+            }
+        }
+
+        .commentContainer {
+            .comment {
+                background-color: #F2F3F5;
+                padding: 5px 10px;
+                border-radius: 7px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.itemContainer {
+    margin: 10px 20px;
+    background: wheat;
+}
+
+.itemContainerContent {
+    background: white;
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.postActionsConatiner {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        background: none;
+        border: none;
+    }
+}
+
+.profilePicContainer {
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+
+    .crossbtn {
+        position: absolute;
+        right: 20px;
+    }
+
+    p {
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: skyblue;
+    }
+}
