@@ -1,19 +1,19 @@
 const jioFacebookReducerDefaultstate = {
     postList: [
-       {
-           "id": "a47895c3-af8e-4318-a5bb-54570dc10016",
-           "description": "hello",
-           "likesCount": 0,
-           "commentsCount": 0,
-           "comments": []
-       }
+    //    {
+    //        "id": "a47895c3-af8e-4318-a5bb-54570dc10016",
+    //        "description": "hello",
+    //        "likesCount": 0,
+    //        "commentsCount": 0,
+    //        "comments": []
+    //    }
     ],
     userDetails: {
         place: "",
         description: "",
         name: "Rupali",
         birthday:""
-    },
+    }
 
 };
 const jioFacebookReducer = (state = jioFacebookReducerDefaultstate, action) => {
