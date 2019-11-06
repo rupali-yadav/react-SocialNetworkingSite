@@ -50,7 +50,7 @@ class JioFacebookPostItem extends React.Component{
                   <div className="userTitleContainer">
                       <div className="profilePicContainer">
                             <span></span>
-                            <p>Rupali</p>
+                            <p>{this.props.name}</p>
                             <div className="crossbtn">
                               <button onClick={this.handleDeleteClick}>
                                  X

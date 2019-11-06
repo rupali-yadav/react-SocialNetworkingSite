@@ -18,6 +18,12 @@
     justify-content: flex-end;
     flex-grow: 2;
 
+    a {
+        text-decoration: none;
+        color: #000000;
+        margin-left: 10px;
+    }
+
     @media (max-width:500px) {
         display: block;
         text-align: left;
@@ -113,7 +119,7 @@
                             margin-left: 20px;
                         }
 
-                        a{
+                        a {
                             text-decoration: none;
                             color: #000000;
                             margin-left: 10px;
@@ -214,18 +220,40 @@
     }
 }
 
-.userDetailsHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.userDetailsContainer {
+    background: #fff;
 
-    button {
-        background: none;
-        height: 30px;
-        width: 50px;
-        border-radius: 5px;
+    .userDetailsContentWrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 10px 20px;
+
+        .userDetailsHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                background: none;
+                height: 30px;
+                width: 50px;
+                border-radius: 5px;
+            }
+        }
+
+        input {
+           background: white;
+           border: none;
+           border-bottom: 1px solid #ccc;
+           padding: 5px;
+           width: 85%;
+           margin-top: 10px;
+        }
+
     }
 }
+
 
 .postContainer {
     padding: 10px 10px 5px 10px;

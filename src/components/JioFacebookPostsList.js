@@ -8,7 +8,7 @@ const JioFacebookPostsList = (props) => (
         {
             props.postsList &&
             props.postsList.map((post)=>{
-                return <JioFacebookPostItem key={post.id} {...post}/>
+                return <JioFacebookPostItem key={post.id} name={props.userName} {...post}/>
             })
         }   
        
@@ -16,7 +16,8 @@ const JioFacebookPostsList = (props) => (
 );
 const mapStateToProps= (state)=>{
    return {
-       postsList: state.postList
+       postsList: state.postList,
+       userName: state.userDetails.name
    }
 }
 export default connect(mapStateToProps)(JioFacebookPostsList);

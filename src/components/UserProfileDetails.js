@@ -41,41 +41,40 @@ class UserProfileDetails extends React.Component{
             description: this.state.description
         }))
     }
-   handlecloseuserDetailsPopup=()=>{
-        this.props.dispatch(showUserDetails(false));
-   }
+  
    render(){
        return(
-            <div className="facebookSectionContainer">
-                <button className="closeBtn" onClick={this.handlecloseuserDetailsPopup}>X</button>
-                <div className="userDetailsHeader">
-                    <h1>My details</h1>
-                    <button onClick={this.handleEditClick}>{this.state.enableInput?"edit": "done"}</button>
+            <div className="userDetailsContainer">
+                <div className="userDetailsContentWrapper">
+                    <div className="userDetailsHeader">
+                        <h1>My details</h1>
+                        <button onClick={this.handleEditClick}>{this.state.enableInput?"edit": "done"}</button>
+                    </div>
+                    <input 
+                    type="text"
+                    placeholder="name"
+                    onChange={this.onNameChange}
+                    value={this.state.name} 
+                    disabled={this.state.enableInput}
+                    />
+
+                    <input 
+                    type="text"
+                    placeholder="place"
+                    onChange={this.onPlaceChange}
+                    value={this.state.place} 
+                    disabled={this.state.enableInput}
+                    />
+
+                    <input 
+                    type="text"
+                    placeholder="tell us about you"
+                    onChange={this.onDescriptionChange}
+                    value={this.state.description} 
+                    disabled={this.state.enableInput} 
+                    />
+                    
                 </div>
-                <input 
-                type="text"
-                placeholder="name"
-                onChange={this.onNameChange}
-                value={this.state.name} 
-                disabled={this.state.enableInput}
-                />
-
-                <input 
-                type="text"
-                placeholder="place"
-                onChange={this.onPlaceChange}
-                value={this.state.place} 
-                disabled={this.state.enableInput}
-                />
-
-                <input 
-                type="text"
-                placeholder="tell us about you"
-                onChange={this.onDescriptionChange}
-                value={this.state.description} 
-                disabled={this.state.enableInput} 
-                />
-                
             </div>
        )
        

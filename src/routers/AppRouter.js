@@ -21,6 +21,7 @@ const AppRouter = () => (
                 <Route path="/likeSection" component={LikesSection}></Route>
                 <Route path="/profile" component={UserProfileDetails}></Route>
                 <Route path="/birthdays" component={Birthdays}></Route>
+                <Route path="/userprofile" component={UserProfileDetails}></Route>
             </Switch>
         </div>
     </BrowserRouter>

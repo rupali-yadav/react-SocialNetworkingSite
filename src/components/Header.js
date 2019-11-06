@@ -35,10 +35,10 @@ class Header extends React.Component{
                         <div className="sideMenuContainer">
                             <div className="sideMenuWrapper">
                                 <div className="headerActions">
-                                    <div className="profilePicContainer">
+                                    <NavLink onClick={this.onMenuToggle}  to="/userprofile" className="profilePicContainer">
                                         <span></span>
                                         <p>{this.props.userDetails.name}</p>
-                                    </div>
+                                    </NavLink>
                                     <div id="home" className="optionContainer">
                                         <span className="optionImage">
                                             <FaHome />

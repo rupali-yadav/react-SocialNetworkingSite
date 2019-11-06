@@ -8,8 +8,8 @@ const LikesSection = (props) => (
     {
         props.postsList &&
         props.postsList.map((post,index)=>{
-            return <div className="itemContainer">
-                        <div className="itemContainerContent" key={post.id}>
+            return <div className="itemContainer"  key={post.id}>
+                        <div className="itemContainerContent">
                             <h2>post-{index+1}</h2>
                             <h3>Likes: {post.likesCount}</h3>    
                             <h3>Comments: {post.comments.length}</h3>
