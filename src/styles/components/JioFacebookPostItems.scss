@@ -1,0 +1,125 @@
+.itemContainer {
+    // border: solid 1px #000;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    .itemContainerContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        h2{
+            margin-top: 10px;
+            text-transform: capitalize;
+            font-size: 22px;
+            border-bottom: solid 1px #636262;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        p{
+            width: 50%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+            span{
+                display: block;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.crossbtn{
+    cursor: pointer;
+    font-weight: 600;
+    color: #525252;
+    position: relative;
+    width: 15px;
+    height: 15px;
+
+    &::before, &::after{
+        position: absolute;
+        width: 15px;
+        height: 3px;
+        content: '';
+        background: #000;
+        top: 6px;
+        left: 0;
+        border-radius: 3px;
+    }
+
+    &::before{
+        transform: rotate(45Deg);
+    }
+
+    &::after {
+        transform: rotate(-45Deg);
+    }
+}
+
+.commentContainer{
+    text-align: left;
+    // // width: 90%;
+    // background: #f7f7f7;
+    padding:5px 0px 5px 20px;
+    margin-bottom: 20px;
+
+    >div{
+        padding: 10px;
+        border-bottom: solid 1px #eeeeee;
+        font-size: 14px;
+
+        &:last-child{
+            border: none;
+        }
+    }
+}
+
+.postContainer{
+    padding-bottom: 20px;
+}
+
+.postActionsConatiner{
+    >div{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        span{
+            width: 20px;
+            height: 20px;
+            background: cyan;
+            margin-right: 10px;
+        }
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+
+.commentInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 30px;
+    input{
+        border-radius: 0px;
+        width: 80%;
+        min-height: 35px;
+    }
+
+    button{
+        min-width: 100px;
+        border-radius: 3px;
+        box-shadow: none;
+        background: #4267B2;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}

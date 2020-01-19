@@ -11,8 +11,8 @@ const LikesSection = (props) => (
             return <div className="itemContainer"  key={post.id}>
                         <div className="itemContainerContent">
                             <h2>post-{index+1}</h2>
-                            <h3>Likes: {post.likesCount}</h3>    
-                            <h3>Comments: {post.comments.length}</h3>
+                            <p className="likes">{post.likesCount} <span>Likes</span> </p>    
+                            <p className="comments">{post.comments.length} <span>Comment</span></p>
                         </div> 
                     </div>
         })

@@ -51,11 +51,7 @@ class JioFacebookPostItem extends React.Component{
                       <div className="profilePicContainer">
                             <span></span>
                             <p>{this.props.name}</p>
-                            <div className="crossbtn">
-                              <button onClick={this.handleDeleteClick}>
-                                 X
-                              </button>    
-                            </div>
+                            <div className="crossbtn" onClick={this.handleDeleteClick}></div>
                       </div>
                   </div>
                   <div className="postTopContainer">
@@ -63,7 +59,8 @@ class JioFacebookPostItem extends React.Component{
                         {this.props.description}
                       </div>
                   </div>
-                  { this.state.showCommentInput &&
+                  { 
+                    this.state.showCommentInput &&
                     <div className="commentInput">
                       <input 
                       value={this.state.comment}
@@ -71,7 +68,7 @@ class JioFacebookPostItem extends React.Component{
                       placeholder="write a comment"
                       onChange={this.commentInputHandler}
                       />
-                      <button onClick={this.replyHandler}>reply</button>
+                      <button onClick={this.replyHandler}>SUBMIT</button>
                     </div>
                   }
                     <div className="commentContainer">
@@ -85,8 +82,8 @@ class JioFacebookPostItem extends React.Component{
                       }
                     </div>
                     <div className="postActionsConatiner">
-                        <button onClick={this.handleLikeClick}> likes-{this.props.likesCount}</button>
-                        <button onClick={this.handleCommentClick}> comment</button>
+                        <div onClick={this.handleLikeClick}> <span></span> Like</div>
+                        <div onClick={this.handleCommentClick}> <span></span> Comment</div>
                     </div>
             </div>
           </div>

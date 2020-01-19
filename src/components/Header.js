@@ -51,12 +51,7 @@ class Header extends React.Component{
                                         </span>
                                         <NavLink onClick={this.onMenuToggle} to="/likeSection">view all your post info</NavLink>
                                     </div>
-                                    <div id="birthdays" className="optionContainer">
-                                        <span className="optionImage">
-                                            <MdCake />
-                                        </span>
-                                        <NavLink onClick={this.onMenuToggle}  to="/birthdays">birthdays</NavLink>        
-                                    </div>     
+                                        
                                 </div>
                             </div>
                         </div>
